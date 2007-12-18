@@ -7,7 +7,6 @@ BuildArch: noarch
 Group: Networking/Remote access
 Source: %{name}-%{version}.tar.bz2
 URL: http://www.sourceforge.net/projects/mussh
-Packager: Antoine Ginies <aginies@mandrakesoft.com>
 requires: openssh-clients, openssh-server
 
 %description
