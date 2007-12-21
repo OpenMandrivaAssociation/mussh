@@ -4,6 +4,7 @@ Version: 0.5
 Release: %mkrel 3
 License: GPL
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}
 Group: Networking/Remote access
 Source: %{name}-%{version}.tar.bz2
 URL: http://www.sourceforge.net/projects/mussh
