@@ -1,7 +1,7 @@
 Summary: MUltihost SSH
 Name: mussh
 Version: 0.5
-Release: %mkrel 5
+Release: %mkrel 6
 License: GPL
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
