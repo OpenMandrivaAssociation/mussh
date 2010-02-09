@@ -1,7 +1,7 @@
 Summary: MUltihost SSH
 Name: mussh
-Version: 0.5
-Release: %mkrel 6
+Version: 0.7
+Release: %mkrel 1
 License: GPL
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
@@ -18,10 +18,12 @@ more than once.
 
 %prep
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
-%setup
+%setup -q -n %name
 
 %install
+mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1/
 install -m 755 mussh $RPM_BUILD_ROOT%{_bindir}/
+install -m 644 mussh.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 
 %clean
 rm -rf $RPM_BUILD_ROOT%
@@ -30,4 +32,5 @@ rm -rf $RPM_BUILD_ROOT%
 %defattr(-,root,root) 
 %doc INSTALL README BUGS CHANGES EXAMPLES
 %attr(755,root,root) %{_bindir}/mussh
+%{_mandir}/man1/%{name}*
 
