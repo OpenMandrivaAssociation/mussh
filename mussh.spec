@@ -17,10 +17,10 @@ ssh-agent and RSA/DSA keys to minimize the need to enter your password
 more than once.
 
 %prep
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
 %setup -q -n %name
 
 %install
+mkdir -p $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1/
 install -m 755 mussh $RPM_BUILD_ROOT%{_bindir}/
 install -m 644 mussh.1 $RPM_BUILD_ROOT%{_mandir}/man1/
