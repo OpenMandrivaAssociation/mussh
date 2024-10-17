@@ -7,7 +7,7 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 Group: Networking/Remote access
 Source: %{name}-%{version}.tar.bz2
-URL: http://www.sourceforge.net/projects/mussh
+URL: https://www.sourceforge.net/projects/mussh
 requires: openssh-clients, openssh-server
 
 %description
